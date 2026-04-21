@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
+</head>
+<body>
+
+<header>
+    <h1>CRUD - JavaScript</h1>
+</header>
+
+    <div class="main-content">
+        
+        <div class="formulario-contenedor">
+            <h2>Registro Personas</h2>
+            <form id="form-persona">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                <input type="text" name="licenciatura" id="licenciatura" placeholder="Carrera" required>
+                <input type="number" name="edad" id="edad" placeholder="Edad" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+
+        <div class="registro">
+            <h2>Personas Registradas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Carrera</th>
+                        <th>Edad</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
